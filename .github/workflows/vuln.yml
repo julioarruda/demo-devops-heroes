@@ -6,8 +6,8 @@
  jobs:
    commentCreated:
      runs-on: ubuntu-latest
-     #env: 
-     #  ISSUE_TITLE: ${{ github.event.issue.title }}
+     env: 
+       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
      steps:
        #- run: echo "$ISSUE_TITLE"
        - run: echo "${{ github.event.issue.title }}"
