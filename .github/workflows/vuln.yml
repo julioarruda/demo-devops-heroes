@@ -9,5 +9,5 @@
      env: 
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
      steps:
-       #- run: echo "$ISSUE_TITLE"
-       - run: echo "${{ github.event.issue.title }}"
+       - run: echo "$ISSUE_TITLE"
+       #- run: echo "${{ github.event.issue.title }}"
